@@ -1,1 +1,11 @@
-<p>root works!</p>
+<app-spinner *ngIf="!people"></app-spinner>
+<ul *ngIf="people">
+  <li *ngFor="let person of people">
+    <mat-checkbox
+      [checked]="person.checked"
+      (change)="put($event.checked, person)"
+      color="warn">
+      {{ person.name }}
+    </mat-checkbox>
+  </li>
+</ul>

@@ -1,27 +1,12 @@
-<section class="example-section">
-  <mat-checkbox class="example-margin">Check me!</mat-checkbox>
-  <mat-checkbox class="example-margin" [disabled]="true">Disabled</mat-checkbox>
-</section>
-
-<section class="example-section">
-  <span class="example-list-section">
-    <mat-checkbox class="example-margin"
-                  [checked]="allComplete"
-                  [color]="task.color"
-                  [indeterminate]="someComplete()"
-                  (change)="setAll($event.checked)">
-      {{task.name}}
-    </mat-checkbox>
-  </span>
-  <span class="example-list-section">
-    <ul>
-      <li *ngFor="let subtask of task.subtasks">
-        <mat-checkbox 
-                      [color]="subtask.color"
-                      (ngModelChange)="updateAllComplete()">
-          {{subtask.name}}
-        </mat-checkbox>
-      </li>
-    </ul>
-  </span>
-</section>
+<div fxLayout="column" fxLayoutAlign="center stretch">
+  <div id="t0" fxLayout="column" fxLayoutAlign="center">
+    5 Settembre 2021<br/>
+    Anna Domenico
+  </div>
+  <div id="t1" fxLayout="column" fxLayoutAlign="center">
+    Scegliere testo da mettere qui!
+  </div>
+  <div id="t2" fxLayout="column" fxLayoutAlign="center">
+    <router-outlet></router-outlet>
+  </div>
+</div>
