@@ -2,13 +2,13 @@ div#t0 {
     background: antiquewhite;
 }
 div#t1 {
-    background: url('../assets/lista-web-sfondo.jpg');
+    background: url('../assets/lista-web-sfondo-bianco.jpg');
     background-position: left;
     background-size: cover;
     color: white;
 }
 
 div#t2 {
-    background: peachpuff;
+    background: #e3ce3e;
     background: antiquewhite;
 }
